@@ -1,0 +1,54 @@
+Feature : Login Functionality
+          Here we will be tesing with login by admin,
+          Super admin, Guest admin, Customers
+
+Background : 
+            Given the user on login page
+            
+
+Scenario Outlane : Login by Customer
+                   When user enter username <username>
+                   And user enter Password  <Password>
+                   And click on signin button
+                   Then user should be able to logged successfully
+
+Example : |username|Password |
+          |Testing |raghu@123|
+          |Test1   |vijay123 |
+       
+  
+
+
+
+
+
+Scenario : Login by Customer
+           Given the user on Login Page
+           When user enter username
+           And user enter Password
+           And click on signin button
+           Then user should be able to logged successfully
+
+Scenario : Login by guest user
+           Given user open browser
+           And enter url
+           When user click on guest user link
+           And user enter email id
+           And Click on submit 
+           Then user should be logged in as a guest user
+
+Scenario : Login by Super admin 
+           Given user open browser
+           And enter url
+           When user click on super admin link
+           And user enter email id
+           And user enter password
+           And click on login button
+           Then user should be logged in as a Super admin
+
+Scenario : Login by Administrator
+           Given user on login page
+           And enter the username "Testing"
+           And enter the password :raghu@123"
+           And click on login button
+           Then user logged in successfully as a Administrator
